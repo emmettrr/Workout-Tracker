@@ -26,7 +26,7 @@ router.get('/api/workouts/range', (req, res) => {
                 return acc + next.duration;
             }, 0);
 
-            console.log("durationnnnnnnnn", duration)
+            console.log("duration!!!!", duration)
 
             return {
                 
