@@ -14,10 +14,12 @@ app.use(express.json());
 app.use(express.static("public"));
 
 mongoose.connect(
-    process.env.MONGODB_URI || "mongodb://localhost/workout", 
+    "mongodb+srv://Kasper:trVP58wq7i8fD8e0@cluster0.qfyxz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority" || "mongodb://localhost/workout", 
     { 
-        useNewUrlParser: true, 
+        useNewUrlParser: true,
+        useFindAndModify: false,
         useUnifiedTopology: true,
+        useCreateIndex: true,
     }
 );
 
