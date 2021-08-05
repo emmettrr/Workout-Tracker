@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const db = require('../models');
 
 mongoose.connect(
-  "mongodb+srv://Kasper:trVP58wq7i8fD8e0@cluster0.qfyxz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority" || "mongodb://localhost/workout", 
+  "mongodb://localhost/workout", 
   { 
       useNewUrlParser: true,
       useFindAndModify: false,
